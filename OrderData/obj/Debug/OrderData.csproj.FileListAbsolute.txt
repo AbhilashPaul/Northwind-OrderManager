@@ -1,0 +1,12 @@
+C:\Users\826747\source\repos\OrderManager\OrderData\bin\Debug\OrderData.dll
+C:\Users\826747\source\repos\OrderManager\OrderData\bin\Debug\OrderData.pdb
+C:\Users\826747\source\repos\OrderManager\OrderData\obj\Debug\OrderData.csprojAssemblyReference.cache
+C:\Users\826747\source\repos\OrderManager\OrderData\obj\Debug\OrderData.csproj.CoreCompileInputs.cache
+C:\Users\826747\source\repos\OrderManager\OrderData\obj\Debug\OrderData.dll
+C:\Users\826747\source\repos\OrderManager\OrderData\obj\Debug\OrderData.pdb
+C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\bin\Debug\OrderData.dll
+C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\bin\Debug\OrderData.pdb
+C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.csprojAssemblyReference.cache
+C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.csproj.CoreCompileInputs.cache
+C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.dll
+C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.pdb
