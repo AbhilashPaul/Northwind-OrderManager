@@ -34,8 +34,6 @@
             this.lblOrderDate = new System.Windows.Forms.Label();
             this.txtCustomerID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnGetOrder = new System.Windows.Forms.Button();
-            this.txtOrderID = new System.Windows.Forms.TextBox();
             this.lblOrderID = new System.Windows.Forms.Label();
             this.txtRequiredDate = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +44,7 @@
             this.dataGridViewOrderItems = new System.Windows.Forms.DataGridView();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblOrderTotal = new System.Windows.Forms.Label();
+            this.cboOrderID = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewOrderItems)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,26 +109,6 @@
             this.label2.Size = new System.Drawing.Size(68, 13);
             this.label2.TabIndex = 20;
             this.label2.Text = "Customer ID:";
-            // 
-            // btnGetOrder
-            // 
-            this.btnGetOrder.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnGetOrder.ForeColor = System.Drawing.Color.Navy;
-            this.btnGetOrder.Location = new System.Drawing.Point(217, 40);
-            this.btnGetOrder.Name = "btnGetOrder";
-            this.btnGetOrder.Size = new System.Drawing.Size(63, 27);
-            this.btnGetOrder.TabIndex = 19;
-            this.btnGetOrder.Text = "Get Order";
-            this.btnGetOrder.UseVisualStyleBackColor = false;
-            this.btnGetOrder.Click += new System.EventHandler(this.btnGetOrder_Click);
-            // 
-            // txtOrderID
-            // 
-            this.txtOrderID.Location = new System.Drawing.Point(162, 44);
-            this.txtOrderID.Name = "txtOrderID";
-            this.txtOrderID.Size = new System.Drawing.Size(50, 20);
-            this.txtOrderID.TabIndex = 18;
-            this.txtOrderID.Tag = "Order ID";
             // 
             // lblOrderID
             // 
@@ -230,12 +209,22 @@
             this.lblOrderTotal.TabIndex = 42;
             this.lblOrderTotal.Text = "Order Total:";
             // 
+            // cboOrderID
+            // 
+            this.cboOrderID.FormattingEnabled = true;
+            this.cboOrderID.Location = new System.Drawing.Point(162, 44);
+            this.cboOrderID.Name = "cboOrderID";
+            this.cboOrderID.Size = new System.Drawing.Size(93, 21);
+            this.cboOrderID.TabIndex = 44;
+            this.cboOrderID.SelectedIndexChanged += new System.EventHandler(this.cboOrderID_SelectedIndexChanged);
+            // 
             // OrderManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(567, 496);
+            this.Controls.Add(this.cboOrderID);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblOrderTotal);
             this.Controls.Add(this.dataGridViewOrderItems);
@@ -251,8 +240,6 @@
             this.Controls.Add(this.lblOrderDate);
             this.Controls.Add(this.txtCustomerID);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnGetOrder);
-            this.Controls.Add(this.txtOrderID);
             this.Controls.Add(this.lblOrderID);
             this.Name = "OrderManagerForm";
             this.Text = "Order Manager";
@@ -270,8 +257,6 @@
         private System.Windows.Forms.Label lblOrderDate;
         private System.Windows.Forms.TextBox txtCustomerID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnGetOrder;
-        private System.Windows.Forms.TextBox txtOrderID;
         private System.Windows.Forms.Label lblOrderID;
         private System.Windows.Forms.TextBox txtRequiredDate;
         private System.Windows.Forms.Label label1;
@@ -282,6 +267,7 @@
         private System.Windows.Forms.DataGridView dataGridViewOrderItems;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblOrderTotal;
+        private System.Windows.Forms.ComboBox cboOrderID;
     }
 }
 

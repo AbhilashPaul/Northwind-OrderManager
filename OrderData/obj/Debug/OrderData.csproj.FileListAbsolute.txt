@@ -10,3 +10,9 @@ C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debu
 C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.csproj.CoreCompileInputs.cache
 C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.dll
 C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderData\obj\Debug\OrderData.pdb
+F:\Northwind-OrderManager\OrderData\bin\Debug\OrderData.dll
+F:\Northwind-OrderManager\OrderData\bin\Debug\OrderData.pdb
+F:\Northwind-OrderManager\OrderData\obj\Debug\OrderData.csprojAssemblyReference.cache
+F:\Northwind-OrderManager\OrderData\obj\Debug\OrderData.csproj.CoreCompileInputs.cache
+F:\Northwind-OrderManager\OrderData\obj\Debug\OrderData.dll
+F:\Northwind-OrderManager\OrderData\obj\Debug\OrderData.pdb

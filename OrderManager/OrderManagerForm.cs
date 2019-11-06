@@ -24,40 +24,16 @@ namespace OrderManager
         public OrderManagerForm()
         {
             InitializeComponent();
+
+            List<int> orderIds = OrderDB.GetOrderIDs();
+            cboOrderID.DataSource = orderIds;
         }
 
         private Order order;                                                    //current order
         List<OrderItem> orderItems;                                             //list of items in the order
         
 
-        /// <summary>
-        /// This event handler retrieves the order information and order details of the user specified order id and display it on the form
-        /// </summary>
-        private void btnGetOrder_Click(object sender, EventArgs e)              //when 'Get Order' button is clicked
-        {
-            if (Validator.IsPresent(txtOrderID) &&                              //check if order id is present                                    
-                Validator.IsInt32(txtOrderID))                                  //chech if it is a positive integer
-            {
-                int orderID = Convert.ToInt32(txtOrderID.Text);                 //get the order ID
-
-                this.GetOrder(orderID);                                         //ge the order details
-
-                if (order == null)                                              //if no order record returned
-                {
-                    this.ClearControls();                                       //clear the textboxes
-                    MessageBox.Show("No Order record found with this ID. " +    //show order not found message
-                         "Please try again.", "Order Not Found");
-                    txtOrderID.Select(0, txtOrderID.Text.Length);
-                    txtOrderID.Focus();
-                }
-                else
-                {
-                    this.DisplayOrder();                                        //display order details
-                    this.GetOrderDetails(order.OrderID);
-                }
-                                                 
-            }
-        }
+        
 
         /// <summary>
         /// Function to retrieve the order information of the user specified order id from the Orders table
@@ -251,6 +227,32 @@ namespace OrderManager
             {
                 MessageBox.Show(ex.Message, ex.GetType().ToString());
             }
+        }
+
+        /// <summary>
+        /// This event handler retrieves the order information and order details of the user specified order id and display it on the form
+        /// </summary>
+        private void cboOrderID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            int orderID = Convert.ToInt32(cboOrderID.SelectedValue);                 //get the order ID
+
+            this.GetOrder(orderID);                                         //ge the order details
+
+            if (order == null)                                              //if no order record returned
+            {
+                this.ClearControls();                                       //clear the textboxes
+                MessageBox.Show("No Order record found with this ID. " +    //show order not found message
+                        "Please try again.", "Order Not Found");
+                cboOrderID.Focus();
+            }
+            else
+            {
+                this.DisplayOrder();                                        //display order details
+                this.GetOrderDetails(order.OrderID);
+            }
+
+            
         }
     }
     

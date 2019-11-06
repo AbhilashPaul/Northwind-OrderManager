@@ -20,6 +20,37 @@ namespace OrderData
     public static class OrderDB
     {
         /// <summary>
+        /// Retrieves order ids 
+        /// </summary>
+        /// <returns> order ids</returns>
+        public static List<int> GetOrderIDs()
+        {
+            List<int> orderIds = new List<int>();
+            using (SqlConnection connection = NorthwindDB.GetConnection(Environment.MachineName))                      //initialize db connection                            
+            {
+                
+                string selectQuery = "SELECT OrderID " +
+                                     "FROM Orders";
+                using (SqlCommand cmd = new SqlCommand(selectQuery, connection))                //initialize sqlcommand
+                {                                            
+                    connection.Open();                                                          //open connection
+                    using (SqlDataReader reader = cmd.ExecuteReader())                          //initialize reader
+                    {
+                        while (reader.Read()) 
+                        {
+                            orderIds.Add((int)reader["OrderID"]);
+                        }
+                    }
+                }
+            }
+
+            return orderIds;
+        }
+
+
+
+
+        /// <summary>
         /// Retrieves order information for the specified order id
         /// </summary>
         /// <param name="orderID"> speciifed order id</param>

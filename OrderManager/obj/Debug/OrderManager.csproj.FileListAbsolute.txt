@@ -24,3 +24,16 @@ C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderManager\obj\D
 C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CopyComplete
 C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderManager\obj\Debug\OrderManager.exe
 C:\Users\paula\Desktop\AbhilashPaul_CPRG200_Lab4_OrderManager\OrderManager\obj\Debug\OrderManager.pdb
+F:\Northwind-OrderManager\OrderManager\bin\Debug\OrderManager.exe.config
+F:\Northwind-OrderManager\OrderManager\bin\Debug\OrderManager.exe
+F:\Northwind-OrderManager\OrderManager\bin\Debug\OrderManager.pdb
+F:\Northwind-OrderManager\OrderManager\bin\Debug\OrderData.dll
+F:\Northwind-OrderManager\OrderManager\bin\Debug\OrderData.pdb
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.csprojAssemblyReference.cache
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.OrderManagerForm.resources
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.Properties.Resources.resources
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.csproj.GenerateResource.cache
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CoreCompileInputs.cache
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.csproj.CopyComplete
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.exe
+F:\Northwind-OrderManager\OrderManager\obj\Debug\OrderManager.pdb
